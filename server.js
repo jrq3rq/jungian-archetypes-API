@@ -17,7 +17,7 @@ app.use((req, res, next) => {
 
 //db config
 const connection_url =
-  "mongodb+srv://james-admin:2rTZqoK1xol5cDzV@cluster0.hveis.mongodb.net/jungian?retryWrites=true&w=majority";
+  "mongodb+srv://<username>:<password>@cluster0.hveis.mongodb.net/<dbname>?retryWrites=true&w=majority";
 mongoose.connect(connection_url, {
   useNewUrlParser: true,
   useCreateIndex: true,
